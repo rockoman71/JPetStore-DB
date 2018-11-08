@@ -16,7 +16,7 @@ node {
                 $class: 'com.urbancode.jenkins.plugins.ucdeploy.DeliveryHelper$Push',
                 pushVersion: '${BUILD_NUMBER}',
 		baseDir: '/var/lib/jenkins/workspace/JPetStore-DB/',
-                fileIncludePatterns: '*',
+                fileIncludePatterns: 'upgrade_sql_1.xml\nlib/*',
                 fileExcludePatterns: '',              
 		incrementalVersion: true,
                 pushDescription: 'Pushed from Jenkins'
